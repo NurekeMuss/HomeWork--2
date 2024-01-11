@@ -13,13 +13,14 @@ const vehicle = {
     model:"x5"
 }
 
-/* Change Model */
+//Change Model
 vehicle.model = "x1"
 console.log(vehicle)
 
-/* Delete Model*/
+//Delete Model
 delete vehicle.model
 console.log(vehicle)
+
 
 /* Thrid Task */
 let salaries = {
@@ -30,4 +31,6 @@ let salaries = {
 
 for(let key in salaries) {
     console.log(key, "=" , salaries[key])
+    totalSalary += salaries[key];
 }
+console.log("Total Salary =", totalSalary);
